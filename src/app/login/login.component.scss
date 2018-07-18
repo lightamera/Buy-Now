@@ -1,0 +1,67 @@
+$backgroudColor : #eaeef4;
+$loginBoxColor : #FFF;
+$buttonColor : #86C232;
+$buttonHoverColor : #61892F;
+$buttonActiveColor : #577c29;
+
+
+body{
+    min-height: 90vh;
+    background-color: $backgroudColor;
+}
+
+button{
+    background-color: $buttonColor !important;
+    border: none !important;
+}
+
+button:hover{
+	background-color: $buttonHoverColor !important;
+}
+
+button:active{
+	background-color: $buttonActiveColor !important;
+}
+
+.login-page{
+
+    height: 90vh;
+
+    .img-logo-panel, .login-panel{
+        margin:auto;
+    }
+
+    .img-logo{
+        width: 80%;
+    }
+
+    .login-form .ui-card{
+        margin:auto;
+        max-width: 500px;
+        background-color: $loginBoxColor;
+        border: none;
+        padding: 30px;
+        -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    }
+
+    input.ui-inputtext{
+        // font-size: 15px;
+        // line-height: 1.5;
+        // color: #666666;
+        // display: block;
+        // width: 100%;
+        // background: #e6e6e6;
+        height: 50px;
+        // border-radius: 25px;
+        // text-align: center;
+    }
+
+    button{
+        height: 40px;
+    }
+
+
+
+
+}

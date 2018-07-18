@@ -1,0 +1,38 @@
+<p-blockUI [blocked]="loadingPage">
+  <p-progressSpinner></p-progressSpinner>
+</p-blockUI>
+
+<div class="ui-g login-page">
+
+  <div class="ui-g-12 ui-lg-4 ui-md-2"></div>
+  <div class="ui-g-12 ui-lg-4 ui-md-8 login-panel" style="text-align:center">
+
+    <p-card class="login-form">
+
+      <img src="assets/images/buynow-logo.png" class="img-logo">
+
+      <div class="emptybox20"></div>
+
+      <p *ngIf="message != ''" class="validate-message">{{message}}</p>
+      <div *ngIf="message != ''" class="emptybox10"></div>
+
+      <input id="user-name" type="text" placeholder="ชื่อผู้ใช้" [(ngModel)]="userName" autofocus pInputText />
+
+      <div class="emptybox20"></div>
+
+      <input id="password" type="password" placeholder="รหัสผ่าน" [(ngModel)]="password" pInputText />
+
+
+      <div class="emptybox20"></div>
+
+      <button class="hvr-float" type="button" label="เข้าระบบ" pButton (click)="loginButtonOnClick()"></button>
+
+      <div class="emptybox20"></div>
+
+    </p-card>
+
+  </div>
+  <div class="ui-g-12 ui-lg-4 ui-md-2"></div>
+
+
+</div>

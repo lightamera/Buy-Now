@@ -1,0 +1,39 @@
+@font-face {
+    font-family: Tahoma;
+    src: url('./../assets/fonts/Tahoma/TahomaRegular.ttf');
+}
+
+*:not(.ui-messages-icon):not(i):not(.ui-panelmenu-icon):not(.ui-menuitem-icon):not(span) {
+    font-family: Tahoma;
+}
+
+.ui-blockui .ui-progress-spinner {
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    width:30em;
+    height:18em;
+    margin-top: -9em; /*set to a negative number 1/2 of your height*/
+    margin-left: -15em; /*set to a negative number 1/2 of your width*/
+  }
+
+@keyframes ui-progress-spinner-color {
+    0%, 75%{
+        stroke: #d62d20;
+    } 
+    25%, 100%{
+        stroke: #0057e7;
+    } 
+
+    50%{
+        stroke: #008744;
+    }  
+}
+
+input.ui-inputtext{
+    width:100% !important;
+}
+
+button.ui-button {
+    width:100% !important;
+}
